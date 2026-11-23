@@ -7,6 +7,9 @@ __pycache__/
 .venv/
 .pytest_cache/
 
-# Local data
-data/
+# Local state, session history, and temporary checkpoints
+data/app.json
+data/*.db
+data/verbalized_incidents.txt
+data/transformer_lm_checkpoint/
 *.db

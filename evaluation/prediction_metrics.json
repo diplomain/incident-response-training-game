@@ -1,0 +1,72 @@
+{
+  "split_info": {
+    "total_sequences": 120,
+    "train_sequences": 96,
+    "test_sequences": 24,
+    "train_transitions": 272,
+    "test_transitions": 70,
+    "test_ratio": 0.2,
+    "seed": 42
+  },
+  "prediction_metrics": [
+    {
+      "model_name": "Random Baseline",
+      "total_transitions": 70,
+      "top_1_accuracy": 12.86,
+      "top_3_accuracy": 15.71,
+      "mrr": 0.1429
+    },
+    {
+      "model_name": "Most Frequent (Unigram) Baseline",
+      "total_transitions": 70,
+      "top_1_accuracy": 12.86,
+      "top_3_accuracy": 32.86,
+      "mrr": 0.2119
+    },
+    {
+      "model_name": "3-Gram Predictor (Statistical)",
+      "total_transitions": 70,
+      "top_1_accuracy": 70.0,
+      "top_3_accuracy": 95.71,
+      "mrr": 0.8286
+    },
+    {
+      "model_name": "Neural Autoregressive LM (CPU)",
+      "total_transitions": 70,
+      "top_1_accuracy": 65.71,
+      "top_3_accuracy": 100.0,
+      "mrr": 0.8286
+    }
+  ],
+  "neural_lm_training": {
+    "epochs": 30,
+    "training_time_sec": 7.06,
+    "final_train_loss": 0.6981
+  },
+  "gameplay_simulation": {
+    "Random Player": {
+      "prediction_accuracy": 5.0,
+      "resource_efficiency": 23.33,
+      "overall_score": 12.33,
+      "rounds": 20,
+      "total_spent": 200,
+      "remaining_budget": 0
+    },
+    "N-Gram Assisted Player": {
+      "prediction_accuracy": 75.0,
+      "resource_efficiency": 32.0,
+      "overall_score": 57.8,
+      "rounds": 20,
+      "total_spent": 200,
+      "remaining_budget": 0
+    },
+    "Neural LM Assisted Player": {
+      "prediction_accuracy": 80.0,
+      "resource_efficiency": 33.0,
+      "overall_score": 61.2,
+      "rounds": 20,
+      "total_spent": 200,
+      "remaining_budget": 0
+    }
+  }
+}

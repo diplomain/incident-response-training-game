@@ -1,0 +1,26 @@
+{
+  "Random Player": {
+    "prediction_accuracy": 5.0,
+    "resource_efficiency": 23.33,
+    "overall_score": 12.33,
+    "rounds": 20,
+    "total_spent": 200,
+    "remaining_budget": 0
+  },
+  "N-Gram Assisted Player": {
+    "prediction_accuracy": 75.0,
+    "resource_efficiency": 32.0,
+    "overall_score": 57.8,
+    "rounds": 20,
+    "total_spent": 200,
+    "remaining_budget": 0
+  },
+  "Neural LM Assisted Player": {
+    "prediction_accuracy": 80.0,
+    "resource_efficiency": 33.0,
+    "overall_score": 61.2,
+    "rounds": 20,
+    "total_spent": 200,
+    "remaining_budget": 0
+  }
+}

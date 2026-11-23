@@ -1,0 +1,5 @@
+model_name,total_transitions,top_1_accuracy,top_3_accuracy,mrr
+Random Baseline,70,12.86,15.71,0.1429
+Most Frequent (Unigram) Baseline,70,12.86,32.86,0.2119
+3-Gram Predictor (Statistical),70,70.0,95.71,0.8286
+Neural Autoregressive LM (CPU),70,65.71,100.0,0.8286
